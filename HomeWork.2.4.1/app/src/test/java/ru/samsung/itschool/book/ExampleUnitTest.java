@@ -91,7 +91,7 @@ public class ExampleUnitTest {
             et_b.setText(TWO_);
             et_c.setText(ZERO);
             view.performClick();
-            String s[]=tv.getText().toString().split(" ");
+            String s[]=tv.getText().toString().trim().replaceAll(" +", " ").split(" ");
             double r1=Double.valueOf(s[0]);
             double r2=Double.valueOf(s[1]);
             if(r1>r2) {
