@@ -91,7 +91,11 @@ public class ExampleUnitTest {
             et_b.setText(TWO_);
             et_c.setText(ZERO);
             view.performClick();
-            org.junit.Assert.assertEquals(tv.getText().toString(), TWO_ + " " + ZERO_);
+            String s[]=tv.getText().toString().split(" ");
+            double r1=Double.valueOf(s[0]);
+            double r2=Double.valueOf(s[1]);
+            org.junit.Assert.assertEquals(2, r1,0.001);
+            org.junit.Assert.assertEquals(0, r2,0.001);
             sb.append(",OK");
         } catch (Throwable t){}
     }
