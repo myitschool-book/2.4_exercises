@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HomeWork241</string>
+    <string name="title">Решить уравнение a*x*x+bx+c=0</string>
+    <string name="a">Введите A</string>
+    <string name="b">Введите B</string>
+    <string name="c">Введите C</string>
+    <string name="calculate">Вычислить</string>
+</resources>
